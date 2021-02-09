@@ -1,6 +1,23 @@
 <html>
 	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
+            @font-face{
+                font-family: Qui;
+                src: url('./fonts/Quiska.ttf');
+            }
+            .brand1{
+                font-family: Qui;
+                background: black;
+                color: white;
+                font-size: 40;
+            }
+            @media screen and (max-width:768px){
+                .brand1{
+                    font-size: 30;
+                }
+            }
 			div{
 				background-color: white;
 				width:100%;
@@ -62,15 +79,19 @@
 				transition: 0.3s;
 				border-radius: 3px;
 			}
+            .logo{
+                height: auto;
+                width: 50%;
+            }
 		</style>
 	</head>
 	<body bgcolor="black">
-		<table width="100%" height="10%">
+		<table width="100%" height="auto">
 			<tr>
 				<td>
-					<font color="white" size="5" face="Verdana"><b>Rover's Compass</b></font>
+                    <div class="brand1">Rover's Compass</div>
 				</td>
-				<td width="40%">
+				<td width="fluid">
 					
 				</td>
 				<td width="35%">
@@ -89,10 +110,10 @@
 				
 		
 		<div>
-		<table border="1" width="100%" height="100%" >
+		<table width="100%" height="100%" >
 			<tr>
 				<td width="50%">
-					<center><b>LOGO</b></center>
+					<center><img src="assets/logo.png" class="logo"></center>
 				</td>
 				<td>
 				<center><h1>Create Your Account</h1>
@@ -111,8 +132,9 @@
 				<center>
 					<button type="submit" class="button1" value="Insert"><font color="white" size="2"><b>Sign Up</b></font></button>
 				</center>	
+                </form>
 				</center>
-			</form>
+			     
 				</td>				
 			</tr>
 		</table>

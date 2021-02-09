@@ -1,0 +1,378 @@
+@import url('fonts.css');
+
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow: inherit;
+    background: #1D1D1D;
+    scroll-behavior: smooth;
+}
+
+/*---Global Classes---*/
+a{
+    text-decoration: none;
+}
+
+/*--X--Global Classes--X--*/
+
+.n1{
+    background: white;
+    padding: 0.05rem;
+    min-height: 3vh;
+}
+.text-gray{
+    font-size: 2rem;
+    padding: 0.2rem;
+    font-family: Qui;
+    color: gray;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:0.6rem 0.7rem 0.6rem 0.7rem ;
+}
+
+.butt-sign{
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 0rem 0.7rem 0rem 0.7rem;
+    margin: 10px 2px;
+    font-family: MuseoModerno;
+}
+.butt-sign:hover{
+    background-color: black;
+    color: white;
+    border: none;
+    opacity: 1;
+    transition: 1s;
+}
+
+
+.site-title{
+    background: url('../assets/indexbg.jpg');
+    background-size: cover;
+    justify-content: center;
+    font-family: HoltwoodOneSC-Regular;
+    text-shadow: 4px 4px black;
+}
+.site-background{
+    padding: 15rem;
+}
+.butt-exp{
+    border: none;
+    padding: 5px 35px 5px 35px;
+    font-family: MuseoModerno;
+    font-size: 25;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: white;
+    text-shadow: none;
+    color: black;
+}
+.butt-exp:hover{
+    color: white;
+    background-color: transparent;
+    border-radius: 20px;
+    transition: 1s;
+    border-radius: 0px;
+    border: 2px solid white;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+.nav-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: BebasNeue-Regular;
+    width:40%;
+    text-decoration: none;
+    font-size: 30px;
+}
+.nav-item li{
+    list-style: none;
+}
+
+.burger{
+    display: none;
+    padding: 10px 0px 0px 0px;
+}
+.burger div{
+    width:25px;
+    height: 5px;
+    background-color: black;
+    margin: 3px;
+}
+.bpos{
+    margin: 12px 0px 0px 0px;
+}
+.shows{
+    width: 80%;
+    background-color: whitesmoke;
+    min-height: 0vh;
+    display: flex;
+    flex-direction: row;
+}
+.table{
+    
+    background-color: black;
+    width: 50%;
+    height: 400px;
+    margin: 30px 15px 15px 15px;
+}
+.space{
+    min-height: 0vh;
+}
+.vid{
+    width= 100%;
+    height= 60%;
+}
+
+
+
+
+.caption{
+    padding: 20px;
+    font-size: 30;
+    font-family: MuseoModerno;
+    background-color: black;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    user-select: none;
+}
+
+.neon {
+    position: relative;
+    overflow: hidden;
+    filter: brightness(100%);
+}
+
+.gradient {
+    position: absolute;
+    background: linear-gradient(45deg, red, gold, lightgreen, gold, red);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    mix-blend-mode: multiply;
+}
+
+.spotlight {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(
+            circle,
+            white,
+            transparent 25%
+        ) center / 25% 25%,
+        radial-gradient(
+            circle,
+            white,
+            black 25%
+        ) center / 12.5% 12.5%;
+    animation: light 5s linear infinite;
+    mix-blend-mode: color-dodge;
+}
+
+@keyframes light {
+    to {
+        transform: translate(50%, 50%);
+    }
+}
+
+
+
+
+
+
+#photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+  margin: 10px;
+  -webkit-column-count: 5;
+  -webkit-column-gap:   px;
+  -moz-column-count:    5;
+  -moz-column-gap:      0px;
+  column-count:         5;
+  column-gap:           2px;  
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100%;
+  height: auto;
+  margin: 1px
+}
+
+@media (max-width: 1200px) {
+  #photos {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+
+
+
+.blog{
+    word-break: break-all;
+    padding: 10px 20px;
+    font-family: MuseoModerno;
+    font-size: 12px;
+    color: antiquewhite;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+
+    .space{
+        min-height: 11vh;
+    }
+    .shows{
+        display: none;
+    }
+    .butt-exp{
+        display: none;
+    }
+    .site-title{
+        background: none;    
+        font-family: HoltwoodOneSC-Regular;
+        text-shadow: 4px 4px black;
+    }
+    .site-background{
+    padding: 5rem;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .nav-item{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 6.2vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-item.show{
+    transform: translateX(0%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .fa {
+			  padding: 8px;
+			  font-size: 20px;
+			  width: 20px;
+			  text-align: center;
+			  text-decoration: none;
+			  margin: 5px 2px;
+			  opacity:0.6;
+			  border-radius:50px;
+			}
+
+			.fa:hover {
+				opacity: 1;
+			}
+
+			.fa-facebook {
+			  background: #3B5998;
+			  color: white;
+			}
+
+			.fa-twitter {
+			  background: #55ACEE;
+			  color: white;
+			}
+			.fa-youtube {
+			  background: #bb0000;
+			  color: white;
+			}
+			.fa-instagram {
+			  background: #125688;
+			  color: white;
+			}
+			.fa-reddit {
+			  background: #ff5700;
+			  color: white;
+			}
+			.fa-pinterest {
+			  background: #cb2027;
+			  color: white;
+			}

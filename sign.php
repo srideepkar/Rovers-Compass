@@ -31,7 +31,7 @@ if(!empty($fname) || !empty($lname) || !empty($mno) || !empty($email) || !empty(
       echo "<script type=\"text/javascript\">".
         "alert('New record inserted sucessfully');".
         "</script>";
-		echo "<script> window.location.assign('home.php'); </script>";
+		echo "<script> window.location.assign('home.html'); </script>";
      }
 	 else {
 		 echo "<script type=\"text/javascript\">".

@@ -1,0 +1,107 @@
+@import url('fonts.css');
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow: inherit;
+    background: #1D1D1D;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+
+.navbar-brand{
+    font-family: Qui;
+}
+.nav-item{
+    font-family: MuseoModerno;
+}
+.feed{
+    background: black;
+    min-height: 100px;
+}
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+.p1{
+    height: inherit;
+    width: inherit;
+    background: #222831;
+    margin: 4% 10% 4% 10%;
+    padding: 0% 5% 0% 5%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  margin: 25px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.blogs{
+    height: inherit;
+    width: auto;
+    margin: 4% 10% 4% 10%;
+    padding: 20px;
+}
+
+.pt-4,.card-text{
+    font-family: MuseoModerno;
+}
+
+.h1{
+    font-family: BebasNeue-Regular;
+}
+
+.image-fluid{
+    height:250px;
+    width:500px;
+}
+
+@media screen and (max-width:768px){
+    .p1{
+        display:none;
+    }
+    .image-fluid{
+        height:200px;
+        width:350px;
+    }
+}
+

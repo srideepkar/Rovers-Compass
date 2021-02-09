@@ -29,7 +29,7 @@
 		echo "<script type=\"text/javascript\">".
         "alert('LogIn Successful');".
         "</script>";
-		echo "<script> window.location.assign('home.php'); </script>";
+		echo "<script> window.location.assign('home.html'); </script>";
 	}
 	else{
 		echo "<script>"."alert('LogIn Failed');"."</script>";
